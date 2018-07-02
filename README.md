@@ -1,0 +1,2 @@
+# SocialApp
+MERN Stack Application
