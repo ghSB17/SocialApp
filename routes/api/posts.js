@@ -122,7 +122,7 @@ router.post(
   (req, res) => {
     const { errors, isValid } = validatePostInput(req.body);
     if (!isValid) {
-      return releaseEvents.json(400).json(errors);
+      return res.status(400).json(errors);
     }
     Post.findById(req.params.post_id)
       .then(post => {
